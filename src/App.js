@@ -3,26 +3,52 @@ import { ScrollingProvider, Section } from 'react-scroll-section'
 import NavBar from './Components/Navigation/Drawer'
 import { loadReCaptcha } from 'react-recaptcha-google'
 
-//Components
-import Home from './Components/Home/Home'
-import About from './Components/About/About'
-import Work from './Components/Work/Work'
-import Contact from './Components/Contact/Contact'
+/* 
+
+  -== Komponenty ==- 
+  
+*/
+
+import Home from './Components/Sections/Welcome/Home'
+import About from './Components/Sections/About/About'
+import Work from './Components/Sections/Work/Work'
+import Contact from './Components/Sections/Contact/Contact'
 import { Menu, Item } from './Components/Navigation/Navigation'
 
-//Style
+/* 
+
+  -== CSS ==- 
+  
+*/
+
 import styles from './App.scss'
 
-/*window.onscroll = function() {
-  var lastScrollTop = 0
-  var st = window.pageYOffset || document.documentElement.scrollTop
-  if (st > lastScrollTop) {
-      console.log('scrolling down')
-    } else {
+/* -== TODO ==-
+
+  - Sprawdzanie Scrollowania
+  - Scrollowanie co jedną sekcje (płynne przejście pomiędzy sekcjami)
+  - Płynna animacja aktywnego linku (po kliknięciu), aka material design (slide horyzontalnie)
+  - Płynna animacja aktywnego linku (po najechaniu), aka discord (powiększenie, pomniejszenie [po kliknięciu rozszerzenie])
+  - Zrobienie dziłającego formularzu (po kliknięciu sumbit pokaże się wycentrowana captcha z zblurowanym/wyciemnionym tłem)
+  - Naprawienie błedu braku chowania się SideNav podczas kliknięcia formularzu
+  - Pomniejsze błedy związane z mobilnym css
+
+*/
+
+/*
+
+  window.onscroll = function() {
+    var lastScrollTop = 0
+    var st = window.pageYOffset || document.documentElement.scrollTop
+    if (st > lastScrollTop) {
+        console.log('scrolling down')
+      } else {
       console.log('up')
-    }
-  lastScrollTop = st <= 0 ? 0 : st //for mobile
-}*/
+      }
+    lastScrollTop = st <= 0 ? 0 : st //for mobile
+  }
+
+*/
 
 class App extends Component {
   componentDidMount() {
