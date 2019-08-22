@@ -11,19 +11,21 @@ class Contact extends Component {
     this.onLoadRecaptcha = this.onLoadRecaptcha.bind(this)
     this.verifyCallback = this.verifyCallback.bind(this)
   }
+
   componentDidMount() {
-    if (this.captchaDemo) {
+    if (this.captcha) {
       console.log('started, just a second...')
-      this.captchaDemo.reset()
+      this.captcha.reset()
     }
   }
+
   onLoadRecaptcha() {
-    if (this.captchaDemo) {
-      this.captchaDemo.reset()
+    if (this.captcha) {
+      this.captcha.reset()
     }
   }
+
   verifyCallback(recaptchaToken) {
-    // Here you will get the final recaptchaToken!!!
     console.log(recaptchaToken, '<= your recaptcha token')
   }
 
@@ -50,20 +52,15 @@ class Contact extends Component {
                     placeholder="Your Meassage"
                   />
                   <div className={styles.Button_Box}>
-                    <button type="reset" value="Reset">
-                      RESET
-                    </button>
-                    <button type="submit" value="Submit">
-                      SUMBIT
-                    </button>
+                    <button>RESET</button>
+                    <button>SUMBIT</button>
                   </div>
                 </form>
                 <div className={styles.Hidden_ReCaptcha_Active} />
                 <div className={styles.Hidden_ReCaptcha}>
-                  {/* You can replace captchaDemo with any ref word */}
                   <ReCaptcha
                     ref={el => {
-                      this.captchaDemo = el
+                      this.captcha = el
                     }}
                     size="normal"
                     data-theme="dark"
