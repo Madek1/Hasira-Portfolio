@@ -1,0 +1,165 @@
+.Root {
+  height: 100%;
+  width: 100%;
+}
+
+.blind {
+  position: absolute;
+  height: 10000%;
+  width: 100%;
+  background: #121212;
+  z-index: 9999;
+}
+
+.Navigation,
+nav,
+ul,
+li {
+  display: flex;
+}
+
+.Navigation_pc {
+  display: block;
+}
+
+.Navigation_mobile {
+  display: none;
+}
+
+.Nav_Logo {
+  height: 100px;
+}
+
+.Menu {
+  position: fixed;
+  z-index: 1;
+}
+
+.Menu_Icon {
+  height: 32px;
+  width: 32px;
+  padding: 12px;
+  background: #151515;
+  border-radius: 8px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Nav_Icon {
+  margin: 0 24px;
+}
+
+.Nav_Version {
+  position: absolute;
+  bottom: 0;
+  height: 48px;
+  line-height: 48px;
+  width: 100%;
+  text-align: center;
+  border-radius: 12px 12px 0 0;
+  background: #151515;
+  color: #fff;
+  font-family: Qenalas-Blod, sans-serif;
+}
+
+.Background {
+  background-image: url('./bg.svg');
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+.App {
+  height: 100%;
+  width: 100%;
+  align-content: center;
+}
+
+.App_logo {
+  animation: App-logo-spin infinite 3000ms linear;
+  will-change: transform;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App_header {
+  background-color: #121212;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App_link {
+  color: #61dafb;
+}
+
+device {
+  opacity: 1;
+  color: #f04847;
+  font-weight: 600;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Progress {
+  font-size: calc(10px + 2vmin);
+}
+
+.Progress:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;
+  font-size: calc(10px + 3vmin);
+}
+
+@keyframes dots {
+  0%,
+  20% {
+    color: rgba(0, 0, 0, 0);
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  40% {
+    color: white;
+    text-shadow: 0.25em 0 0 rgba(0, 0, 0, 0), 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  60% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 rgba(0, 0, 0, 0);
+  }
+  80%,
+  100% {
+    text-shadow: 0.25em 0 0 white, 0.5em 0 0 white;
+  }
+}
+
+/* END Section Home */
+
+/* WIDTH */
+
+@media screen and (max-width: 1400px) {
+  .Navigation_pc {
+    display: none;
+  }
+  .Navigation_mobile {
+    position: relative;
+    display: block;
+    margin: 24px 0 0 24px;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 960px) {
+  .Navigation_mobile {
+    margin: 4px 0 0 4px;
+  }
+  .Menu_Icon {
+    margin: 12px;
+  }
+}

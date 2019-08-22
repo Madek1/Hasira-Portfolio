@@ -1,0 +1,144 @@
+.Work_FlexRoot {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.Work_Section_Name {
+  position: relative;
+  font-size: 34px;
+  color: #5bda7f;
+  font-family: Qanelas-Bold, sans-serif;
+}
+
+.Work_CenterSide {
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.Work_Box_Wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+}
+
+.Work_Box {
+  position: relative;
+  width: 215px;
+  height: 215px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 12px;
+  background-color: #151515;
+  margin: 12px;
+  transition: all 0.3s ease-out;
+}
+
+.Work_Box:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  cursor: pointer;
+  box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.3);
+}
+
+.Work_Box_left {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-end;
+  width: 50%;
+}
+
+.Work_Box_Right {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+.Work_Box_Image {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  opacity: 0.68;
+}
+
+.Work_Box_Title {
+  position: relative;
+  top: 85%;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: Qenalas-Light, sans-serif;
+  text-shadow: 1px 1px 5px black;
+}
+
+@media screen and (max-width: 956px) {
+  .Work_Section_Name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 0px;
+    top: 25px;
+  }
+  .Work_FlexRoot {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .Work_Box {
+    margin: 12px auto;
+    width: 85%;
+    justify-content: center;
+  }
+  .Work_Box_left {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+  }
+
+  .Work_Box_Right {
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .Work_Box_Title {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Work_Box_left {
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  .Work_Box_Right {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .Work_Box_Title {
+    font-size: 14px;
+  }
+  .Work_Box {
+    margin: 6px auto;
+    width: 95%;
+    height: calc(215px - 10vmin);
+  }
+  .Work_Section_Name {
+    font-size: 6vmin;
+    right: 0;
+  }
+}

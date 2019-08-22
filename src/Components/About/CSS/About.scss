@@ -1,0 +1,301 @@
+.About_FlexRoot {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.About_LeftSide {
+  display: flex;
+  flex-grow: 1;
+  flex: 1;
+  width: 50%;
+  flex-direction: column;
+}
+
+.About_RightSide {
+  display: flex;
+  flex-grow: 1;
+  flex: 1;
+  width: 50%;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+
+.About_Section_Name {
+  position: relative;
+  font-size: 34px;
+  color: #5bda7f;
+  font-family: Qanelas-Bold, sans-serif;
+}
+
+.About_Info_Wrapper {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  width: 100%;
+  flex-direction: row;
+  position: relative;
+}
+
+.About_Info_Connector {
+  display: flex;
+  flex-direction: column;
+}
+
+.About_Info_Core {
+  position: relative;
+  width: 300px;
+  height: auto;
+  background: #151515;
+  padding: 12px;
+  border-radius: 12px;
+  margin: 12px;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.About_Info_Title {
+  margin: 6px 0 12px 3px;
+  font-size: 18px;
+}
+
+.About_Info_Text {
+  font-size: 16px;
+  opacity: 0.8;
+  padding: 3px;
+  letter-spacing: 0.25px;
+}
+
+.About_Spoiler {
+  color: #0c0c0c;
+  background-color: #0c0c0c;
+  border-radius: 4px;
+  transition: 0.3s color ease;
+}
+
+.About_Spoiler:hover {
+  color: #fff;
+  background-color: transparent;
+  cursor: default;
+}
+
+.About_Skill {
+  position: relative;
+  display: flex;
+  margin: 12px;
+  justify-content: center;
+}
+
+.About_Skill_Root_HTML,
+.About_Skill_Root_CSS,
+.About_Skill_Root_JS,
+.About_Skill_Root_REACT {
+  position: relative;
+  width: 134px;
+  height: 64px;
+  border-radius: 4px;
+  font-size: 24px;
+  line-height: 64px;
+  text-align: center;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.About_Skill_Root_HTML {
+  background-color: #ff232d;
+}
+
+.About_Skill_Root_CSS {
+  background-color: #00b7cd;
+}
+
+.About_Skill_Root_JS {
+  background-color: #007eff;
+}
+
+.About_Skill_Root_REACT {
+  background-color: #0dd453;
+}
+
+.About_Info_Name {
+  color: #f04847;
+}
+
+.About_Info_HTML5 {
+  color: #ff232d;
+}
+
+.About_Info_CSS3 {
+  color: #00b7cd;
+}
+
+.About_Info_JavaScript {
+  color: #007eff;
+}
+
+.About_Info_REACT {
+  color: #0dd453;
+}
+
+.About_Skill_Progress {
+  background-color: #151515;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3);
+
+  width: 290px;
+  height: 44px;
+  top: 10px;
+
+  position: relative;
+  display: block;
+}
+
+.About_Skill_Progress > span {
+  border-radius: 0 4px 4px 0;
+  height: 44px;
+  display: block;
+  position: relative;
+}
+
+.HTML:hover,
+.CSS:hover,
+.JS:hover,
+.REACT:hover {
+  cursor: auto;
+}
+
+.About_Skill_Progress > .HTML {
+  background-color: #ff232d;
+  width: 80%;
+}
+
+.About_Skill_Progress > .CSS {
+  background-color: #00b7cd;
+  width: 95%;
+}
+
+.About_Skill_Progress > .JS {
+  background-color: #007eff;
+  width: 40%;
+}
+
+.About_Skill_Progress > .REACT {
+  background-color: #0dd453;
+  width: 20%;
+}
+
+.About_Skill_Progress > .About_Skill_Number {
+  position: relative;
+  font-size: 16px;
+  bottom: 32px;
+  float: right;
+  display: block;
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 1450px) {
+  .About_Info_Core {
+    width: auto;
+  }
+
+  .About_Info_Title {
+    font-size: 18px;
+  }
+  .About_Info_Text {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .About_Info_Title {
+    font-size: 16px;
+  }
+  .About_Info_Text {
+    font-size: 12px;
+    letter-spacing: 0px;
+  }
+}
+
+@media screen and (max-width: 956px) {
+  .About_FlexRoot {
+    flex-direction: column;
+  }
+  .About_LeftSide {
+    width: 100%;
+  }
+  .About_RightSide {
+    width: 100%;
+  }
+  .About_Info_Core {
+    padding: 12px;
+    margin: 6px auto;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0px;
+  }
+  .About_Info_Wrapper {
+    margin-top: 50px;
+    flex-direction: column;
+  }
+  .About_Info_Title {
+    font-size: 16px;
+  }
+  .About_Info_Text {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  .About_Section_Name {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    right: 0px;
+    top: 25px;
+  }
+}
+
+@media screen and (max-width: 600px) and (max-height: 960px) {
+  .About_Info_Core {
+    width: 95%;
+  }
+  .About_Info_Title {
+    font-size: 16px;
+    margin: 0 0 6px 0;
+  }
+  .About_Info_Text {
+    font-size: 14px;
+    letter-spacing: 0px;
+  }
+  .About_Skill_Root_HTML,
+  .About_Skill_Root_CSS,
+  .About_Skill_Root_JS,
+  .About_Skill_Root_REACT {
+    font-size: 18px;
+    line-height: 48px;
+    height: 48px;
+  }
+  .About_Skill_Progress {
+    height: 22px;
+    top: 12px;
+  }
+  .About_Skill_Progress > span {
+    height: 22px;
+  }
+  .About_Skill_Progress > .About_Skill_Number {
+    font-size: 10px;
+    bottom: 18px;
+    margin-right: 12px;
+  }
+  .About_Skill {
+    margin: 6px;
+  }
+  .About_Section_Name {
+    font-size: 6vmin;
+  }
+}
