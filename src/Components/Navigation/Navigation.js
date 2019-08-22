@@ -48,7 +48,7 @@ const Item = styled.li`
   color: ${props => (props.selected ? 'FFFFFF' : '#FFFFFFAD')};
   &:hover ${Div} {
     opacity: 0.7;
-    border-top: 4px solid #5bda7f;
+    border-top: 3px solid #5bda7f;
     width: 50%;
     margin 0 auto;
   }
