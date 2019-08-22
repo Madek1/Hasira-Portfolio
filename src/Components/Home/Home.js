@@ -1,6 +1,12 @@
 import React, { Component } from 'react'
+
+/* CSS */
 import styles from './CSS/Home.scss'
+
+/* Avatar */
 import avatar from '../../icons/avatar.webp'
+
+/* Icons */
 import code from '../../icons/code.svg'
 import telegram from '../../icons/social-telegram.svg'
 import facebook from '../../icons/social-facebook.svg'
@@ -74,6 +80,17 @@ class Home extends Component {
                 <img alt="twitter" src={twitter} />
                 <br />
                 <span>Twitter</span>
+              </div>
+              <div
+                className={styles.Social_Wrapper}
+                onClick={() => {
+                  window.location.href =
+                    'https://github.com/hasiraaa/Hasira-Portfolio'
+                }}
+              >
+                <img alt="github" src={twitter} />
+                <br />
+                <span>GitHub</span>
               </div>
             </div>
           </div>
