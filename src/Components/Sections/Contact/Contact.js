@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { ReCaptcha } from 'react-recaptcha-google'
 
 /* CSS */
-import root_styles from '../Home/CSS/Home.scss'
+import root_styles from '../Welcome/CSS/Home.scss'
 import styles from './CSS/Contact.scss'
 
 class Contact extends Component {

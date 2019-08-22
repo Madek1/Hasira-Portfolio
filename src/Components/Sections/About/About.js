@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 
 /* CSS */
-import root_styles from '../Home/CSS/Home.scss'
+import root_styles from '../Welcome/CSS/Home.scss'
 import styles from './CSS/About.scss'
 
 class About extends Component {

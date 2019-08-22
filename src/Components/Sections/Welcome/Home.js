@@ -4,14 +4,15 @@ import React, { Component } from 'react'
 import styles from './CSS/Home.scss'
 
 /* Avatar */
-import avatar from '../../icons/avatar.webp'
+import avatar from './icons/avatar.webp'
 
 /* Icons */
-import code from '../../icons/code.svg'
-import telegram from '../../icons/social-telegram.svg'
-import facebook from '../../icons/social-facebook.svg'
-import steam from '../../icons/social-steam.svg'
-import twitter from '../../icons/social-twitter.svg'
+import code from './icons/code.svg'
+import telegram from './icons/social-telegram.svg'
+import facebook from './icons/social-facebook.svg'
+import steam from './icons/social-steam.svg'
+import twitter from './icons/social-twitter.svg'
+import github from './icons/social-github.svg'
 
 class Home extends Component {
   render() {
@@ -88,7 +89,7 @@ class Home extends Component {
                     'https://github.com/hasiraaa/Hasira-Portfolio'
                 }}
               >
-                <img alt="github" src={twitter} />
+                <img alt="github" src={github} />
                 <br />
                 <span>GitHub</span>
               </div>
