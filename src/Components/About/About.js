@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+
+/* CSS */
 import root_styles from '../Home/CSS/Home.scss'
 import styles from './CSS/About.scss'
 
